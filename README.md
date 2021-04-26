@@ -12,88 +12,48 @@ This theme is inspired by [sphinx-rtd-theme](https://github.com/readthedocs/sphi
 - [@primer/css](https://github.com/primer/css)
 - [github-pages](https://github.com/github/pages-gem) ([dependency versions](https://pages.github.com/versions/))
 
-## Quick start
 
-```yml
-remote_theme: rundocs/jekyll-rtd-theme
-```
+## Testing
 
-You can [generate](https://github.com/rundocs/starter-slim/generate) with the same files and folders from [rundocs/starter-slim](https://github.com/rundocs/starter-slim/)
-
-## Usage
-
-Documentation that can guide how to create with Github pages, please refer to [rundocs.io](https://rundocs.io) for details
-
-## Features
-
-- Shortcodes (Toasts card, mermaid)
-- Pages Plugins (emoji, gist, avatar, mentions)
-- Auto generate sidebar
-- [Attribute List Definitions](https://kramdown.gettalong.org/syntax.html#attribute-list-definitions) (Primer/css utilities, Font Awesome 4)
-- Service worker (caches)
-- SEO (404, robots.txt, sitemap.xml)
-- Canonical Link (Open Graph, Twitter Card, Schema data)
-
-## Options
-
-| name          | default value        | description       |
-| ------------- | -------------------- | ----------------- |
-| `title`       | repo name            |                   |
-| `description` | repo description     |                   |
-| `url`         | user domain or cname |                   |
-| `baseurl`     | repo name            |                   |
-| `lang`        | `en`                 |                   |
-| `direction`   | `auto`               | `ltr` or `rtl`    |
-| `highlighter` | `rouge`              | Cannot be changed |
-
-```yml
-# folders sort
-readme_index:
-  with_frontmatter: true
-
-meta:
-  key1: value1
-  key2: value2
-  .
-  .
-  .
-
-google:
-  gtag:
-  adsense:
-
-mathjax: # this will prased to json, default: {}
-
-mermaid:
-  custom:     # mermaid link
-  initialize: # this will prased to json, default: {}
-
-scss:   # also _includes/extra/styles.scss
-script: # also _includes/extra/script.js
-
-translate:
-  # shortcodes
-  danger:
-  note:
-  tip:
-  warning:
-  # 404
-  not_found:
-  # copyright
-  revision:
-  # search
-  searching:
-  search:
-  search_docs:
-  search_results:
-  search_results_found: # the "#" in this translate will replaced with results size!
-  search_results_not_found:
-
-plugins:
-  - jemoji
-  - jekyll-avatar
-  - jekyll-mentions
-```
+<div class="person-container">
+  <div class="persons js-dropdown-items">
+    <div class="person js-dropdown-item">
+      <div class="avatar"><img src="https://img.icons8.com/wired/64/000000/plugin.png" alt="" title="Title 1"></div>
+      <div class="fullname">Project</div>
+      <div class="js-description">
+        <p>Project별 OSC Process 수행 및 Status 관리</p>
+      </div>
+    </div>
+    <div class="person js-dropdown-item">
+      <div class="avatar"><img src="https://img.icons8.com/wired/64/000000/plugin.png" alt="" title="Title 2"></div>
+      <div class="fullname">License / OSS</div>
+      <div class="js-description">
+        <p>Open Source License / OSS 정보 조회 및 관리</p>
+      </div>
+    </div>
+    <div class="person js-dropdown-item">
+      <div class="avatar"><img src="https://img.icons8.com/wired/64/000000/plugin.png" alt="" title="Title 3"></div>
+      <div class="fullname">Vulnerability</div>
+      <div class="js-description">
+        <p><a href="http://google.com">Open Source 보안 취약점 조회 및 프로젝트별 모니터링 제공 </a></p>
+      </div>
+    </div>   
+    <div class="person js-dropdown-item">
+      <div class="avatar"><img src="https://img.icons8.com/wired/64/000000/plugin.png" alt="" title="Title 3"></div>
+      <div class="fullname">3rd Party</div>
+      <div class="js-description">
+        <p>3rd Party로부터 입수된 Software별 OSS 관리</p>
+      </div>
+    </div> 
+        <div class="person js-dropdown-item">
+      <div class="avatar"><img src="https://img.icons8.com/wired/64/000000/plugin.png" alt="" title="Title 3"></div>
+      <div class="fullname">Self-Check</div>
+      <div class="js-description">
+        <p>검토할 OSS에 대한 License, 보안 취약점 등 사전 확인 기능</p>
+      </div>
+    </div> 
+  </div>
+</div>
 
 ## The license
 

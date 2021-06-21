@@ -26,8 +26,19 @@
                     </li>
                 {%- endfor -%}
         {%- endcase -%}
+        
     </ul>
-    <a class="edit" href="{% github_edit_link %}" title="{{ __.edit | default: 'Edit on GitHub'}}" rel="noreferrer" target="_blank">
-        <i class="fa fa-edit"></i>
-    </a>
+    <ul class="breadcrumb" role="navigation" aria-label="breadcrumbs navigation">
+        {% capture link1 %}{{ site.top_link }}{{ page.url}}{% endcapture %}
+        <li class="breadcrumb-item">
+            <a href="{{ link1 }}" title="{{ site.top_link_word }}" rel="noreferrer" target="_self">
+                {{ site.top_link_word }}
+            </a>
+        </li>
+        <li class="breadcrumb-item"  aria-current="page">
+            <a class="edit" href="{% github_edit_link %}" title="{{ __.edit | default: 'Edit on GitHub'}}" rel="noreferrer" target="_blank">
+                <i class="fa fa-edit"></i>
+            </a>
+        </li>
+    </ul>
 </div>
